@@ -1,3 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715023881
+::res://::1715026082
 icon.svg::CompressedTexture2D::9203598026889225352::1715023875::1715023881::1::::<><>::
+README.md::TextFile::-1::1715025008::0::1::::<><>::
+::res://assets/::1715026082
+::res://assets/fonts/::1715025205
+::res://assets/music/::1715025225
+::res://assets/sounds/::1715025212
+::res://assets/sprites/::1715026082
+BoatSpriteSheet.png::CompressedTexture2D::2614873499705964495::1715026079::1715026083::1::::<><>::
+ShipTemp.png::CompressedTexture2D::2383864839893551177::1715025669::1715025669::1::::<><>::
+::res://scenes/::1715025595
+game.tscn::PackedScene::2559903341372124374::1715025595::0::1::::<><>::
+::res://scripts/::1715025177
