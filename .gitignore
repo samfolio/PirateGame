@@ -40,6 +40,3 @@ bin/
 
 # Godot specific files
 .godot/
-.godot/editor/editor_layout.cfg
-
-
