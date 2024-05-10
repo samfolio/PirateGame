@@ -38,6 +38,8 @@ bin/
 *.shader.cache
 *.gdshader
 
-# Godot specific shader files
+# Godot specific files
 .godot/
+.godot/editor/editor_layout.cfg
+
 
