@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
 <<<<<<< HEAD
+<<<<<<< HEAD
 ::res://::1716947045
 icon.svg::CompressedTexture2D::9203598026889225352::1715346865::1715435503::1::::<><>::
 README.md::TextFile::-1::1715346865::0::1::::<><>::
@@ -45,6 +46,8 @@ player.tscn::PackedScene::7883937291054637294::1716947007::0::1::::<><>::uid://b
 ::res://scripts/::1715366844
 player.gd::GDScript::-1::1715366844::0::1::::<>CharacterBody2D<>::
 =======
+=======
+>>>>>>> 54965f3 (Added rotational movement)
 ::res://::1715314263
 icon.svg::CompressedTexture2D::9203598026889225352::1715023875::1715023881::1::::<><>::
 README.md::TextFile::-1::1715025008::0::1::::<><>::
@@ -62,4 +65,7 @@ player.gd::GDScript::-1::1715313656::0::1::::<>RefCounted<>::
 player.tscn::PackedScene::7883937291054637294::1715314056::0::1::::<><>::uid://bdiwt4xjspmx0::::res://assets/sprites/BoatSpriteSheet.png<>res://scripts/player.gd
 ::res://scripts/::1715313269
 player.gd::GDScript::-1::1715313269::0::1::::<>CharacterBody2D<>::
+<<<<<<< HEAD
 >>>>>>> 54965f3a30c31a2a7dac3c747dca3820543aab48
+=======
+>>>>>>> 54965f3 (Added rotational movement)
