@@ -1,3 +1,6 @@
+res://scripts/ShopMenu.gd
+res://scenes/shop_menu.tscn
 res://scenes/game.tscn
 res://scenes/player.tscn
-res://scripts/player.gd
+res://assets/sprites/island_shop.tscn
+res://scenes/world.gd
