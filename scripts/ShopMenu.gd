@@ -34,12 +34,12 @@ func _on_buttonright_pressed():
 func _on_buybutton_pressed():
 	if item == 1:
 		price = item1price
-		if Global.loot >= price:
+		if 1==1: #Global.loot >= price:
 			if item1owned == false:
 					buy()
 	elif item == 2:
 		price = item2price
-		if Global.loot >= price:
+		if 1==1: #Global.loot >= price:
 			if item2owned == false:
 					buy()
 

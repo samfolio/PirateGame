@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715743424
+::res://::1715824036
 icon.svg::CompressedTexture2D::9203598026889225352::1715023875::1715023881::1::::<><>::
 README.md::TextFile::-1::1715025008::0::1::::<><>::
 ::res://assets/::1715656018
@@ -25,15 +25,16 @@ Readme.txt::TextFile::-1::1715648655::0::1::::<><>::
 Ships Mockup.png::CompressedTexture2D::5706232441369933783::1715648655::1715648660::1::::<><>::
 Ships tiles.png::CompressedTexture2D::8296763908318488535::1715648655::1715648660::1::::<><>::
 ::res://assets/sounds/::1715025212
-::res://assets/sprites/::1715656549
+::res://assets/sprites/::1715824036
 arrowsicons.png::CompressedTexture2D::1402431795940282547::1715655608::1715655613::1::::<><>::
 Boat Fx Animations-Sheet.png::CompressedTexture2D::2741030004124198731::1715648655::1715648660::1::::<><>::
 BoatSpriteSheet.png::CompressedTexture2D::2614873499705964495::1715026079::1715026083::1::::<><>::
 coinicon.png::CompressedTexture2D::2000043303963339803::1715656196::1715656196::1::::<><>::
 Fxs Animations.png::CompressedTexture2D::2409263808131880091::1715648655::1715648660::1::::<><>::
-island_shop.tscn::PackedScene::7748546944076454888::1715656549::0::1::::<><>::res://scripts/IslandShop.gd<>uid://camg6fas3hd2t::::res://assets/sprites/ShopIsland.png
+island_shop.tscn::PackedScene::7748546944076454888::1715823449::0::1::::<><>::res://scripts/IslandShop.gd<>uid://camg6fas3hd2t::::res://assets/sprites/ShopIsland.png
 Mockup Island.png::CompressedTexture2D::115785489509102812::1715648655::1715648660::1::::<><>::
 Rangeupgradeicon.png::CompressedTexture2D::2753778591424147233::1715656012::1715656018::1::::<><>::
+RockObstacle.png::CompressedTexture2D::5834339546665659737::1715824020::1715824036::1::::<><>::
 Ships Mockup.png::CompressedTexture2D::6169694373935224768::1715648655::1715648660::1::::<><>::
 Ships tiles.png::CompressedTexture2D::1654228297426679922::1715648655::1715648660::1::::<><>::
 ShipTemp.png::CompressedTexture2D::2383864839893551177::1715025669::1715025669::1::::<><>::
@@ -43,11 +44,12 @@ Water and Island tiles.png::CompressedTexture2D::473644999055136286::1715648655:
 Mockup Island.png::CompressedTexture2D::890390940644634962::1715648655::1715648660::1::::<><>::
 Readme.txt::TextFile::-1::1715650925::0::1::::<><>::
 Water and Island tiles.png::CompressedTexture2D::7868988114175589080::1715648655::1715648660::1::::<><>::
-::res://scenes/::1715656546
-game.tscn::PackedScene::2559903341372124374::1715655587::0::1::::<><>::uid://dklbkbnq1053w::::res://scenes/player.tscn<>res://scripts/player.gd<>uid://dinpo3efr1kb5::::res://assets/sprites/island_shop.tscn
-player.tscn::PackedScene::7883937291054637294::1715651153::0::1::::<><>::uid://bfb1mmo2km4st::::res://assets/sprites/Boat Fx Animations-Sheet.png
-shop_menu.tscn::PackedScene::2662263570095989862::1715656546::0::1::::<><>::res://scripts/ShopMenu.gd<>uid://bfh7liyk8k2l6::::res://assets/sprites/Rangeupgradeicon.png<>uid://t8l3145k2gml::::res://assets/sprites/arrowsicons.png<>uid://3q3okxh4n2gl::::res://assets/sprites/coinicon.png
-::res://scripts/::1715656561
+::res://scenes/::1715823449
+game.tscn::PackedScene::2559903341372124374::1715823448::0::1::::<><>::res://scenes/world.gd<>uid://dklbkbnq1053w::::res://scenes/player.tscn<>res://scripts/player.gd<>uid://dinpo3efr1kb5::::res://assets/sprites/island_shop.tscn<>uid://bd6vdenpti4og::::res://scenes/shop_menu.tscn
+player.tscn::PackedScene::7883937291054637294::1715823449::0::1::::<><>::uid://bfb1mmo2km4st::::res://assets/sprites/Boat Fx Animations-Sheet.png
+shop_menu.tscn::PackedScene::2662263570095989862::1715823449::0::1::::<><>::res://scripts/ShopMenu.gd<>uid://bfh7liyk8k2l6::::res://assets/sprites/Rangeupgradeicon.png<>uid://t8l3145k2gml::::res://assets/sprites/arrowsicons.png<>uid://3q3okxh4n2gl::::res://assets/sprites/coinicon.png
+world.gd::GDScript::-1::1715823237::0::1::::<>Node2D<>::
+::res://scripts/::1715824036
 IslandShop.gd::GDScript::-1::1715651101::0::1::::<>Node2D<>::
 player.gd::GDScript::-1::1715651069::0::1::::<>CharacterBody2D<>::
-ShopMenu.gd::GDScript::-1::1715656508::0::1::::<>StaticBody2D<>::
+ShopMenu.gd::GDScript::-1::1715823227::0::1::::<>StaticBody2D<>::
