@@ -34,6 +34,7 @@ func player_movement(delta):
 	input = get_input()
 	# this is a comment
 	# this is another comment
+	# third comment
 	#if there is no input, then if the decrease the speed.
 	if input == Vector2.ZERO:
 		if velocity.length() > (friction * delta):
