@@ -18,6 +18,10 @@ const friction = 20
 var input = Vector2.ZERO
 var rotation_direction = 0
 
+#tells the shop to open if entering its area.
+func player_shop_method():
+		pass
+
 #runs when the game starts and runs our player_move func.
 func _physics_process(delta):
 	player_movement(delta)
@@ -32,9 +36,7 @@ func get_input():
 func player_movement(delta):
 	#Checks for the input direction.
 	input = get_input()
-	# this is a comment
-	# this is another comment
-	# third comment
+	
 	#if there is no input, then if the decrease the speed.
 	if input == Vector2.ZERO:
 		if velocity.length() > (friction * delta):

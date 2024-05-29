@@ -1,0 +1,160 @@
+[gd_scene load_steps=14 format=3 uid="uid://bd6vdenpti4og"]
+
+[ext_resource type="Script" path="res://scripts/ShopMenu.gd" id="1_gx2b2"]
+[ext_resource type="Texture2D" uid="uid://bfh7liyk8k2l6" path="res://assets/sprites/Rangeupgradeicon.png" id="2_uhlhl"]
+[ext_resource type="Texture2D" uid="uid://t8l3145k2gml" path="res://assets/sprites/arrowsicons.png" id="3_xcxx8"]
+[ext_resource type="Texture2D" uid="uid://3q3okxh4n2gl" path="res://assets/sprites/coinicon.png" id="4_t0oht"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h670w"]
+atlas = ExtResource("4_t0oht")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dhy2j"]
+atlas = ExtResource("2_uhlhl")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mtgtd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h670w")
+}],
+"loop": true,
+"name": &"Lootupgradeicon",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dhy2j")
+}],
+"loop": true,
+"name": &"Rangeupgradeicon",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ceb2v"]
+atlas = ExtResource("3_xcxx8")
+region = Rect2(5, 0, 13, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ib2ft"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ceb2v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqfq6"]
+atlas = ExtResource("3_xcxx8")
+region = Rect2(18, 0, 13, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1bkm2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mqfq6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_06jpb"]
+atlas = ExtResource("4_t0oht")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iixhb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_06jpb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ShopMenu" type="StaticBody2D"]
+script = ExtResource("1_gx2b2")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -92.0
+offset_top = -38.0
+offset_right = 90.0
+offset_bottom = 47.0
+color = Color(0, 0, 0, 0.117647)
+
+[node name="icon" type="AnimatedSprite2D" parent="."]
+position = Vector2(-70, -14)
+scale = Vector2(1.14844, 1.14844)
+sprite_frames = SubResource("SpriteFrames_mtgtd")
+animation = &"Lootupgradeicon"
+
+[node name="Buttonleft" type="Button" parent="."]
+offset_left = -88.0
+offset_top = 22.0
+offset_right = -72.0
+offset_bottom = 43.0
+
+[node name="buttonlefticon" type="AnimatedSprite2D" parent="."]
+position = Vector2(-82, 32)
+sprite_frames = SubResource("SpriteFrames_ib2ft")
+
+[node name="Buttonright" type="Button" parent="."]
+offset_left = 69.0
+offset_top = 22.0
+offset_right = 86.0
+offset_bottom = 44.0
+
+[node name="buttonrighticon" type="AnimatedSprite2D" parent="."]
+position = Vector2(81, 34)
+sprite_frames = SubResource("SpriteFrames_1bkm2")
+
+[node name="pricelabel" type="RichTextLabel" parent="."]
+offset_left = 61.0
+offset_top = -37.0
+offset_right = 91.025
+offset_bottom = -14.0
+scale = Vector2(0.5, 0.5)
+text = "100"
+
+[node name="itemname" type="RichTextLabel" parent="."]
+offset_left = -48.0
+offset_top = -37.0
+offset_right = 164.0
+offset_bottom = -9.0
+scale = Vector2(0.5, 0.5)
+text = "Range upgrade"
+
+[node name="descriptionbox" type="RichTextLabel" parent="."]
+offset_left = -27.0
+offset_top = -17.0
+offset_right = 523.0
+offset_bottom = 158.0
+scale = Vector2(0.2, 0.2)
+text = "This upgrade will extand your cannon's range."
+
+[node name="coinicon" type="AnimatedSprite2D" parent="."]
+position = Vector2(82, -30)
+scale = Vector2(0.625, 0.625)
+sprite_frames = SubResource("SpriteFrames_iixhb")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = -22.0
+offset_top = 31.0
+offset_right = 12.0
+offset_bottom = 42.0
+color = Color(1, 0, 0, 0.305882)
+
+[node name="buybutton" type="Button" parent="."]
+offset_left = -22.0
+offset_top = 31.0
+offset_right = 12.0
+offset_bottom = 42.0
+
+[connection signal="pressed" from="Buttonleft" to="." method="_on_buttonleft_pressed"]
+[connection signal="pressed" from="Buttonright" to="." method="_on_buttonright_pressed"]
+[connection signal="pressed" from="buybutton" to="." method="_on_buybutton_pressed"]
