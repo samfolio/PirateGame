@@ -52,11 +52,14 @@ player.gd::GDScript::-1::1715366844::0::1::::<>CharacterBody2D<>::
 icon.svg::CompressedTexture2D::9203598026889225352::1715023875::1715023881::1::::<><>::
 README.md::TextFile::-1::1715025008::0::1::::<><>::
 ::res://assets/::1715314263
+::res://assets/::1715314263
 ::res://assets/fonts/::1715025205
 ::res://assets/music/::1715025225
 ::res://assets/sounds/::1715025212
 ::res://assets/sprites/::1715314263
+::res://assets/sprites/::1715314263
 BoatSpriteSheet.png::CompressedTexture2D::2614873499705964495::1715026079::1715026083::1::::<><>::
+shipsheet.png::CompressedTexture2D::2479804161050296305::1715314257::1715314263::1::::<><>::
 shipsheet.png::CompressedTexture2D::2479804161050296305::1715314257::1715314263::1::::<><>::
 ShipTemp.png::CompressedTexture2D::2383864839893551177::1715025669::1715025669::1::::<><>::
 ::res://scenes/::1715314260

@@ -1,9 +1,4 @@
 res://scenes/player.tscn
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 54965f3 (Added rotational movement)
 res://scenes/player.gd
 res://scenes/game.tscn
 res://scripts/player.gd
