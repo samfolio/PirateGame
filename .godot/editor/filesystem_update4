@@ -1,2 +1,7 @@
-res://scenes/game.tscn
 res://scenes/player.tscn
+<<<<<<< HEAD
+=======
+res://scenes/player.gd
+res://scenes/game.tscn
+res://scripts/player.gd
+>>>>>>> 54965f3a30c31a2a7dac3c747dca3820543aab48

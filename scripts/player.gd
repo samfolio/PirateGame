@@ -1,33 +1,53 @@
 extends CharacterBody2D
 
 
+#Exports variable
+@export var yes = 1
+#roations vars
+@export var speed = 400
+@export var rotation_speed = 1.5
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-
-# Get the gravity from the project settings to be synced with RigidBody nodes.
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 
+#Variables for controlling the movement
+const max_speed = 50
+const accel = 50
+const friction = 20
+
+#input variable
+var input = Vector2.ZERO
+var rotation_direction = 0
+
+#runs when the game starts and runs our player_move func.
 func _physics_process(delta):
-	# Add the gravity.
-	print("Player Script Active");
-	if not is_on_floor():
-		velocity.y += gravity * delta
-		print("Falling");
+	player_movement(delta)
 
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+func get_input():
+	rotation_direction = Input.get_axis("ui_left", "ui_right")
+	#velocity = transform.x * Input.get_axis("ui_down", "ui_up") * speed
+	#If input is -1 go down. If input is 1 go up.
+	input.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up")) 
+	return input.normalized()
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction = Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * SPEED
-		print("Direction is: " + direction);
-		print($"Speed is: {SPEED}");
+func player_movement(delta):
+	#Checks for the input direction.
+	input = get_input()
+	
+	#if there is no input, then if the decrease the speed.
+	if input == Vector2.ZERO:
+		if velocity.length() > (friction * delta):
+			velocity -= velocity.normalized() * (friction * delta)
+		else:
+			#if the speed is less than the friction speed. set the speed to 0.
+			velocity = Vector2.ZERO
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+		#else use the input to speed up in the direction it is pointing.
+		velocity += (transform.x * Input.get_axis("ui_down", "ui_up") * accel * delta)
+		velocity = velocity.limit_length(max_speed)
+	
+	#rotate the ship based on the direction input.
+	rotation += rotation_direction * rotation_speed * delta
+	
+	#move an slide allows us to slide.
 	move_and_slide()
+
