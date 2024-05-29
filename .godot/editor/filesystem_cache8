@@ -1,45 +1,45 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715435503
+::res://::1716947045
 icon.svg::CompressedTexture2D::9203598026889225352::1715346865::1715435503::1::::<><>::
 README.md::TextFile::-1::1715346865::0::1::::<><>::
 ::res://addons/::1715351386
 ::res://addons/godot-git-plugin/::1715351591
 ::res://addons/godot-git-plugin/win64/::1715365902
-::res://assets/::1715436396
-::res://assets/Pirates/::1715436418
-Mockup Pirates.png::CompressedTexture2D::2955449115573804638::1715436418::1715436421::1::::<><>::
-Readme.txt::TextFile::-1::1715436418::0::1::::<><>::
-::res://assets/Pirates/Pirate Blue Sprite Sheet/::1715436418
-Pirates Blue Sprite Sheet.png::CompressedTexture2D::9164054761986952925::1715436418::1715436420::1::::<><>::
-::res://assets/Pirates/Pirate Gray Sprite Sheet/::1715436418
-Pirates Gray Sprite Sheet.png::CompressedTexture2D::5528332514366426676::1715436418::1715436420::1::::<><>::
-::res://assets/Pirates/Pirate Green Sprite Sheet/::1715436418
-Pirates Green Sprite Sheet.png::CompressedTexture2D::5717491850887622596::1715436418::1715436420::1::::<><>::
-::res://assets/Pirates/Pirate Red Sprite Sheet/::1715436418
-Pirates Red Sprite Sheet.png::CompressedTexture2D::4425015693476553195::1715436418::1715436420::1::::<><>::
-::res://assets/Pirates/Pirate White Sprite Sheet/::1715436418
-Pirates White Sprite Sheet.png::CompressedTexture2D::2134266709978123066::1715436418::1715436420::1::::<><>::
-::res://assets/Pirates/Pirate Yellow Sprite Sheet/::1715436418
-Pirates Yellow Sprite Sheet.png::CompressedTexture2D::8052864031634483324::1715436418::1715436420::1::::<><>::
-::res://assets/Ships/::1715436392
-Readme.txt::TextFile::-1::1715434962::0::1::::<><>::
-Ships Mockup.png::CompressedTexture2D::6069926529040134047::1715434962::1715436392::1::::<><>::
-Ships tiles.png::CompressedTexture2D::8865350967540297862::1715434962::1715436392::1::::<><>::
-::res://assets/sprites/::1715436304
-Boat Fx Animations-Sheet.png::CompressedTexture2D::5115249457927370772::1715435821::1715436057::1::::<><>::
-BoatSpriteSheet.png::CompressedTexture2D::2614873499705964495::1715346865::1715346865::1::::<><>::
-Fxs Animations.png::CompressedTexture2D::4903927497731243673::1715436054::1715436144::1::::<><>::
-Mockup Island.png::CompressedTexture2D::5413682313641579602::1715436247::1715436304::1::::<><>::
-Ships Mockup.png::CompressedTexture2D::2656294415207071155::1715435652::1715435677::1::::<><>::
-Ships tiles.png::CompressedTexture2D::2289004452359110500::1715435655::1715435677::1::::<><>::
-ShipTemp.png::CompressedTexture2D::2383864839893551177::1715346865::1715346865::1::::<><>::
-Water and Island tiles.png::CompressedTexture2D::3290852927747705670::1715436248::1715436304::1::::<><>::
-::res://assets/Water_Islands/::1715436367
-Mockup Island.png::CompressedTexture2D::2300383283067047086::1715436247::1715436367::1::::<><>::
-Readme.txt::TextFile::-1::1715436247::0::1::::<><>::
-Water and Island tiles.png::CompressedTexture2D::1100575142510163971::1715436248::1715436367::1::::<><>::
-::res://scenes/::1715366844
+::res://assets/::1716947013
+::res://assets/Pirates/::1716947013
+Mockup Pirates.png::CompressedTexture2D::8606257234929412153::1716947013::1716947046::1::::<><>::
+Readme.txt::TextFile::-1::1716947013::0::1::::<><>::
+::res://assets/Pirates/Pirate Blue Sprite Sheet/::1716947013
+Pirates Blue Sprite Sheet.png::CompressedTexture2D::7858967294412370141::1716947013::1716947046::1::::<><>::
+::res://assets/Pirates/Pirate Gray Sprite Sheet/::1716947013
+Pirates Gray Sprite Sheet.png::CompressedTexture2D::1624634072301910830::1716947013::1716947046::1::::<><>::
+::res://assets/Pirates/Pirate Green Sprite Sheet/::1716947013
+Pirates Green Sprite Sheet.png::CompressedTexture2D::7987717913119914952::1716947013::1716947046::1::::<><>::
+::res://assets/Pirates/Pirate Red Sprite Sheet/::1716947013
+Pirates Red Sprite Sheet.png::CompressedTexture2D::4280730855800368919::1716947013::1716947046::1::::<><>::
+::res://assets/Pirates/Pirate White Sprite Sheet/::1716947013
+Pirates White Sprite Sheet.png::CompressedTexture2D::3415589611666159537::1716947013::1716947046::1::::<><>::
+::res://assets/Pirates/Pirate Yellow Sprite Sheet/::1716947013
+Pirates Yellow Sprite Sheet.png::CompressedTexture2D::4840707867718022888::1716947013::1716947046::1::::<><>::
+::res://assets/Ships/::1716947013
+Readme.txt::TextFile::-1::1716947013::0::1::::<><>::
+Ships Mockup.png::CompressedTexture2D::4169123989728397612::1716947013::1716947046::1::::<><>::
+Ships tiles.png::CompressedTexture2D::3067210809159026205::1716947013::1716947046::1::::<><>::
+::res://assets/sprites/::1716947013
+Boat Fx Animations-Sheet.png::CompressedTexture2D::2259401961984591752::1716947013::1716947046::1::::<><>::
+BoatSpriteSheet.png::CompressedTexture2D::2614873499705964495::1716947007::1716947007::1::::<><>::
+Fxs Animations.png::CompressedTexture2D::7964828686761598835::1716947013::1716947046::1::::<><>::
+Mockup Island.png::CompressedTexture2D::7357846624869532138::1716947013::1716947046::1::::<><>::
+Ships Mockup.png::CompressedTexture2D::5469427846672532842::1716947013::1716947046::1::::<><>::
+Ships tiles.png::CompressedTexture2D::7597798862028818544::1716947013::1716947046::1::::<><>::
+ShipTemp.png::CompressedTexture2D::2383864839893551177::1716947007::1716947007::1::::<><>::
+Water and Island tiles.png::CompressedTexture2D::2330359052159180920::1716947013::1716947046::1::::<><>::
+::res://assets/Water_Islands/::1716947013
+Mockup Island.png::CompressedTexture2D::6309644537271626053::1716947013::1716947046::1::::<><>::
+Readme.txt::TextFile::-1::1716947013::0::1::::<><>::
+Water and Island tiles.png::CompressedTexture2D::7572801072566113198::1716947013::1716947046::1::::<><>::
+::res://scenes/::1716947007
 game.tscn::PackedScene::2559903341372124374::1715366844::0::1::::<><>::uid://dklbkbnq1053w::::res://scenes/player.tscn<>res://scripts/player.gd
-player.tscn::PackedScene::7883937291054637294::1715366844::0::1::::<><>::uid://bdiwt4xjspmx0::::res://assets/sprites/BoatSpriteSheet.png
+player.tscn::PackedScene::7883937291054637294::1716947007::0::1::::<><>::uid://bdiwt4xjspmx0::::res://assets/sprites/BoatSpriteSheet.png
 ::res://scripts/::1715366844
 player.gd::GDScript::-1::1715366844::0::1::::<>CharacterBody2D<>::
