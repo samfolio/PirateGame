@@ -41,4 +41,6 @@ bin/
 # Godot specific files
 .godot/
 .godot/editor/
+.godot/editor/*
+.godot/mono/
 .godot/uid_cache.bin
