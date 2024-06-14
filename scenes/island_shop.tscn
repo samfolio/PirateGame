@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://m6oa7j4kfhep"]
+
+[ext_resource type="Script" path="res://scripts/IslandShop.gd" id="1_xaomm"]
+[ext_resource type="Texture2D" uid="uid://cxk24mbfdpjpp" path="res://assets/sprites/ShopIsland.png" id="2_wcu6y"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_40eax"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_wcu6y")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_layhn"]
+radius = 54.037
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1u454"]
+size = Vector2(55, 58)
+
+[node name="IslandShop" type="Node2D"]
+script = ExtResource("1_xaomm")
+
+[node name="ShopArt" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_40eax")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_layhn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_1u454")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
