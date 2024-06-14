@@ -1,5 +1,7 @@
-AnimatedSprite2D
+CharacterBody2D
+RigidBody2D
 CollisionShape2D
+AnimatedSprite2D
 StaticBody2D
 TileMap
 Node
@@ -10,4 +12,3 @@ Button
 RichTextLabel
 CanvasLayer
 Camera2D
-CharacterBody2D

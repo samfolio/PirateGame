@@ -1,6 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://bkn584rgtddj5"]
+[gd_scene load_steps=6 format=3 uid="uid://bkn584rgtddj5"]
 
 [ext_resource type="Texture2D" uid="uid://0daud4wg0af2" path="res://assets/sprites/RockObstacle.png" id="1_8f4rv"]
+
+[sub_resource type="GDScript" id="GDScript_kij06"]
+script/source = "extends StaticBody2D
+
+@export var scene_name: String = \"Rock\"
+"
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2x05y"]
 
@@ -23,6 +29,7 @@ animations = [{
 
 [node name="Rock" type="StaticBody2D" parent="."]
 position = Vector2(52, 34)
+script = SubResource("GDScript_kij06")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Rock"]
 shape = SubResource("CapsuleShape2D_2x05y")

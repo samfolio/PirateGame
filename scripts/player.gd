@@ -11,7 +11,7 @@ extends CharacterBody2D
 @export var view_radius: int = 2
 @export var island_density = 0.01
 @export var enemy_density = 0.05
-@export var rock_density = 0.02
+@export var rock_density = 0.03
 @export var island_scene: PackedScene
 @export var enemy_scene: PackedScene
 @export var rock_scene: PackedScene
@@ -31,11 +31,25 @@ var rotation_direction = 0
 # set to keep track of occupied positions
 var occupied_positions = {}
 
+# set to keep track of generated chunks
+var generated_chunks = {}
+
+# var to keep track of player's parent node
+var player_parent_node = null
+
 func _ready():
 	if tilemap == null:
 		print("Tilemap not assigned")
 		return
 	print("BaseTileMap assigned")
+	
+	# Find player parent node
+	player_parent_node = get_parent()
+	if player_parent_node:
+		print("Players parent node found: ", player_parent_node)
+	else:
+		print("Player parent node not found")
+	
 	# Initialize first chunk
 	_generate_chunks_around_player()
 
@@ -63,8 +77,11 @@ func _generate_chunks_around_player():
 	var player_chunk_position = world_to_chunk(global_position)
 	for x in range(player_chunk_position.x - view_radius, player_chunk_position.x + view_radius + 1):
 		for y in range(player_chunk_position.y - view_radius, player_chunk_position.y + view_radius + 1):
-			# print("Generating chunk at: (", x, ",", y, ")")
-			_generate_chunk(Vector2i(x,y))
+			var chunk_position = Vector2i(x, y)
+			if not generated_chunks.has(chunk_position):
+				# print("Generating chunk at: (", x, ",", y, ")")
+				_generate_chunk(Vector2i(x,y))
+				generated_chunks[chunk_position] = true
 
 func _generate_chunk(chunk_position: Vector2i):
 	if tilemap == null:
@@ -85,16 +102,14 @@ func _generate_chunk(chunk_position: Vector2i):
 	print("Finished generating chunks at: ", chunk_position, " starting at positin: ", start_position, " placed: ", num_tiles_placed, " tiles...")
 	
 	# place islands
-	_place_scene(chunk_position, island_scene, island_density)
-	
-	#place enemies
-	_place_scene(chunk_position, enemy_scene, enemy_density)
-	#_place_islands_and_enemies(chunk_position)
-	
-	_place_scene(chunk_position, rock_scene, rock_density)
+	_place_scene(chunk_position, island_scene, island_density, tilemap, "IslandShop")
+	# place enemies
+	_place_scene(chunk_position, enemy_scene, enemy_density, player_parent_node, "Enemy")
+	# place rocks
+	_place_scene(chunk_position, rock_scene, rock_density, tilemap, "Rock")
 	
 	
-func _place_scene(chunk_position: Vector2i, scene: PackedScene, density: float):
+func _place_scene(chunk_position: Vector2i, scene: PackedScene, density: float, parent: Node, scene_name: String):
 	var start_position = chunk_position * chunk_size
 	var end_position = start_position + chunk_size
 	
@@ -104,9 +119,9 @@ func _place_scene(chunk_position: Vector2i, scene: PackedScene, density: float):
 		if not is_position_occupied(scene_position):
 			var scene_instance = scene.instantiate()
 			scene_instance.position = scene_position * tilemap.tile_set.tile_size
-			tilemap.add_child(scene_instance)
+			parent.add_child(scene_instance)
 			occupied_positions[scene_position] = true
-			print("Placing scene @", scene_instance.position)
+			print("Placing ", scene_name, "@", scene_instance.position)
 	
 		
 func is_position_occupied(position: Vector2) -> bool:

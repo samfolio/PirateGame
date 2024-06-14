@@ -1,6 +1,6 @@
-[gd_scene load_steps=17 format=3 uid="uid://bcqbh7sffjeeg"]
+[gd_scene load_steps=18 format=3 uid="uid://bcqbh7sffjeeg"]
 
-[ext_resource type="Script" path="res://scenes/world.gd" id="1_fkko4"]
+[ext_resource type="Script" path="res://scripts/world.gd" id="1_fkko4"]
 [ext_resource type="PackedScene" uid="uid://dklbkbnq1053w" path="res://scenes/player.tscn" id="1_xg1qq"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="2_5cqpn"]
 [ext_resource type="PackedScene" uid="uid://dinpo3efr1kb5" path="res://assets/sprites/island_shop.tscn" id="3_dg1fh"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://0daud4wg0af2" path="res://assets/sprites/RockObstacle.png" id="6_wl1un"]
 [ext_resource type="PackedScene" uid="uid://cefqi4772q4qc" path="res://scenes/enemy.tscn" id="7_f1q4j"]
 [ext_resource type="Texture2D" uid="uid://b01dihn52xeos" path="res://assets/sprites/Water+.png" id="8_k3lfa"]
+[ext_resource type="Script" path="res://scripts/rock.gd" id="9_753ei"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_56lnq"]
 
@@ -222,17 +223,13 @@ position = Vector2(150, -54)
 
 [node name="Rock" type="StaticBody2D" parent="."]
 position = Vector2(52, 34)
+script = ExtResource("9_753ei")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Rock"]
 shape = SubResource("CapsuleShape2D_nhpwg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Rock"]
 sprite_frames = SubResource("SpriteFrames_hvtma")
-
-[node name="Enemies" type="Node" parent="."]
-
-[node name="Enemy" parent="Enemies" instance=ExtResource("7_f1q4j")]
-position = Vector2(278, 137)
 
 [node name="BaseTileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_pcp2e")
