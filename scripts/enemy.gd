@@ -1,4 +1,6 @@
-extends Node2D
+extends CharacterBody2D
+
+@export var scene_name: String = "Enemy"
 
 var speed = 100
 var player = null
@@ -10,4 +12,5 @@ func _ready():
 func _process(delta):
 	if player:
 		var direction = (player.position - position).normalized()
-		position += direction * speed * delta
+		velocity = direction * speed
+		move_and_slide()
