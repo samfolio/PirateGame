@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://dklbkbnq1053w"]
+
+[ext_resource type="Texture2D" uid="uid://870515yw451v" path="res://assets/sprites/ShipTemp.png" id="1_2rkpj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dwwu8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2rkpj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iwe6b"]
+size = Vector2(48, 24)
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -3)
+rotation = -1.5708
+scale = Vector2(0.0813859, 0.0835983)
+sprite_frames = SubResource("SpriteFrames_dwwu8")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -4)
+shape = SubResource("RectangleShape2D_iwe6b")
+
+[node name="PlayerCam" type="Camera2D" parent="."]
+unique_name_in_owner = true

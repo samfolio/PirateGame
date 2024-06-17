@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bkn584rgtddj5"]
+
+[ext_resource type="Texture2D" uid="uid://0daud4wg0af2" path="res://assets/sprites/RockObstacle.png" id="1_8f4rv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2x05y"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_72rc8"]
+atlas = ExtResource("1_8f4rv")
+region = Rect2(0, 0, 25, 25)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qi7s0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_72rc8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Rock" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rock"]
+shape = SubResource("CapsuleShape2D_2x05y")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Rock"]
+sprite_frames = SubResource("SpriteFrames_qi7s0")

@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://br4pxyncwpvc2"]
+
+[ext_resource type="Script" path="res://scenes/_debug/info.gd" id="1_5m116"]
+
+[node name="Info" type="CanvasLayer"]
+script = ExtResource("1_5m116")
+
+[node name="InfoBox" type="VBoxContainer" parent="."]
+offset_right = 218.0
+offset_bottom = 122.0
+
+[node name="Global Position" type="Label" parent="InfoBox"]
+layout_mode = 2
+
+[node name="Chunk Address" type="Label" parent="InfoBox"]
+layout_mode = 2
