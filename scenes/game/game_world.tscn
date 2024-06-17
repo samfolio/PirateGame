@@ -204,6 +204,11 @@ script = ExtResource("3_631mt")
 [node name="base_tile_map" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_pcp2e")
 format = 2
+layer_0/name = "WaterLayer"
+layer_0/z_index = -1
+layer_1/name = "LandLayer"
+layer_1/z_index = 1
+layer_1/tile_data = PackedInt32Array()
 script = ExtResource("9_fyc3m")
 
 [node name="InfoLayer" parent="." instance=ExtResource("7_rfe2e")]
