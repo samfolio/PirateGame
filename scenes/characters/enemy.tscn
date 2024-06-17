@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cefqi4772q4qc"]
+
+[ext_resource type="Script" path="res://scenes/characters/enemy.gd" id="1_3gfh2"]
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_3gfh2"]
+[ext_resource type="Texture2D" uid="uid://870515yw451v" path="res://assets/sprites/ShipTemp.png" id="1_kucsy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iukjc"]
+size = Vector2(14, 26)
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_3gfh2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_iukjc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.375008, 2.87499)
+scale = Vector2(0.0605646, 0.0551002)
+texture = ExtResource("1_kucsy")
