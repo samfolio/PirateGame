@@ -45,5 +45,7 @@ bin/
 .godot/mono/
 .godot/uid_cache.bin
 .addons/
-godot/
-addons/
+/.godot/
+/.addons/
+/.godot
+*.godot
