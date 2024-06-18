@@ -49,3 +49,4 @@ bin/
 /.addons/
 /.godot
 *.godot
+/addons
