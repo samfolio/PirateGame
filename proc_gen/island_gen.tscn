@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cq7a2uptf86ml"]
+
+[ext_resource type="Script" path="res://proc_gen/island_gen.gd" id="1_30fyv"]
+
+[node name="IslandGen" type="Node2D"]
+script = ExtResource("1_30fyv")
